@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.BLL.DesignPatterns.GenericRepostory.ConcRep;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace Project.WinUI
 {
     public partial class Form1 : Form
     {
+        CategoryRepository _cRep;
+
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            listBox1.DataSource=_cRep.Get
+
         }
     }
 }
